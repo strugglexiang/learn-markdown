@@ -18,6 +18,8 @@
   - [参考式](#参考式)
   - [自动链接](#自动链接)
 - [插入图片](#插入图片)
+  - [图片行内式](#图片行内式)
+  - [图片参考式](#图片参考式)
 
   
 ## 目录的写法
@@ -219,5 +221,30 @@
 <http://www.baidu.com>
 
 ## 插入图片
+## 图片行内式
+图片的创建方式与超链接相似, 而且和超链接一样也有两种写法, 行内式和参考式写法。
+
+语法中图片Alt的意思是如果图片因为某些原因不能显示, 就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样, 表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的, 可以省略, 但建议写上。
+
+语法：
+```
+![图片Alt](图片地址 "图片Title")
+
+![哆啦A梦](https://cdoco.com/images/duolaameng.jpeg "哆啦A梦")
+```
+效果：
+![哆啦A梦](https://cdoco.com/images/duolaameng.jpeg "哆啦A梦")
+
+## 图片参考式
+语法：
+```
+![哆啦A梦][duolaameng]
+
+[duolaameng]:https://cdoco.com/images/duolaameng.jpeg "哆啦A梦"
+```
+效果：
+![哆啦A梦][duolaameng]
+
+[duolaameng]:https://cdoco.com/images/duolaameng.jpeg "哆啦A梦"
 
 
